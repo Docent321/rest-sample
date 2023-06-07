@@ -18,7 +18,7 @@ public class RestTests extends TestBase {
 
     @Test
     public void testCreateIssue() throws IOException {
-        skipIfNotFixed(426);
+        skipIfNotFixed(426); //номер бага
         Set<Issue> oldIssues = getIssues();
         Issue newIssue = new Issue().withSubject("new subject 1").withDescription("new Desc 1");
         int issueId = createIssue(newIssue);
